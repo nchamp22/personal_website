@@ -6,7 +6,7 @@ title: "About Me"
 
 I am an Applied Statistics major at Brigham Young University. I was born and raised in Canada, but I have also lived in Japan, the Philippines, and the United States. I am happily married to my beautiful wife, and we have a 4-month-old son named Leo. I love learning new things, and you can often find me reading. I have been training in jiujitsu since I was eleven years old, and I also enjoy skiing and spending time playing with my son.
 
-![My Photo](potrait.jpg)
+![My Photo](potrait.JPG)
 
 ## Education
 
