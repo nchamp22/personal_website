@@ -2,26 +2,22 @@
 title: "Welcome to My Data Science Portfolio"
 ---
 
-# Hello! I'm Noah 👋
+# Hello! I'm Noah!
 
-Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you'll find projects that demonstrate what I've learned and discovered.
+Welcome to my data science portfolio! This site is part of Brigham Young University's STAT 386 Data Science Process class and showcases my journey in learning data science and analytics. As you explore this site, you'll get to know a little more about my background, see some of the projects I am working on, and learn about the skills I am developing.
 
-## 🎓 About This Portfolio
 
-This portfolio shows my work learning data science. Each project includes:
-
-- My code with documentation
-- Visualizations I created
-- What I learned and discovered
-
-I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pages](https://pages.github.com/).
 
 ## 🛠️ Skills I'm Learning
 
-- **Programming**: Python, Pandas for data analysis
+- **Programming**: Python (including Pandas and Numpy)
 - **Visualization**: Creating charts with Matplotlib and Seaborn
 - **Data Collection**: Getting data from files, websites, and APIs
 - **Analysis**: Finding patterns and answering questions with data
+
+## 🎓 About This Portfolio
+
+I built this site using [Quarto](https://quarto.org/) and host it on [GitHub Pages](https://pages.github.com/).
 
 ## 📈 My Projects
 
