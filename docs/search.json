@@ -25,21 +25,21 @@
     "href": "index.html",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "Welcome to my data science portfolio! This site is part of Brigham Young University’s STAT 386 Data Science Process class and showcases my journey in learning data science and analytics. As you explore this site, you’ll get to know a little more about my background, see some of the projects I am working on, and learn about the skills I am developing.\n\n\n\nProgramming: Python (including Pandas and Numpy)\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
     "objectID": "index.html#about-this-portfolio",
     "href": "index.html#about-this-portfolio",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+    "text": "I built this site using Quarto and host it on GitHub Pages."
   },
   {
     "objectID": "index.html#skills-im-learning",
     "href": "index.html#skills-im-learning",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+    "text": "Programming: Python (including Pandas and Numpy)\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
   },
   {
     "objectID": "index.html#my-projects",
@@ -103,7 +103,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I am an Applied Statistics Major at Brigham Young University. I love using data to solve real problems."
+    "text": "I am an Applied Statistics major at Brigham Young University. I was born and raised in Canada, but I have also lived in Japan, the Philippines, and the United States. I am happily married to my beautiful wife, and we have a 4-month-old son named Leo. I love learning new things, and you can often find me reading. I have been training in jiujitsu since I was eleven years old, and I also enjoy skiing and spending time playing with my son."
   },
   {
     "objectID": "about.html#background",
@@ -117,14 +117,14 @@
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\nStatistics (BS): Applied Statistics & Analytics Emphasis - Brigham Young University, Sept. 2024 - PRESENT\nRelevant Coursework: Statistical Modeling, Single and Multivariate Calculus, Pobability and Inference, Python Programming, Excel."
+    "text": "Education\n\nStatistics (BS): Applied Statistics & Analytics Emphasis - Brigham Young University, Sept. 2024 - PRESENT"
   },
   {
     "objectID": "about.html#skills-interests",
     "href": "about.html#skills-interests",
     "title": "About Me",
     "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python, R\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nHealthcare analytics\nFinance\nCrime data"
+    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python, R\nData Analysis: Pandas, NumPy, Excel\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nPublic Health Data\nSocioeconomic Data"
   },
   {
     "objectID": "about.html#goals",
@@ -138,7 +138,7 @@
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: nchamp@byu.du\nGitHub: github.com/nchamp22\nLinkedIn: linkedin.com/in/noah-champagne\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\n\nEmail: nchamp@byu.du\nGitHub: github.com/nchamp22\nLinkedIn: linkedin.com/in/noah-champagne"
   },
   {
     "objectID": "blog.html#working-with-data-in-pandas",
@@ -202,5 +202,19 @@
     "title": "Data Science Blog: Working with Data in Pandas Tutorial",
     "section": "Going Futher with Graphing",
     "text": "Going Futher with Graphing"
+  },
+  {
+    "objectID": "about.html#get-to-know-me",
+    "href": "about.html#get-to-know-me",
+    "title": "About Me",
+    "section": "",
+    "text": "I am an Applied Statistics major at Brigham Young University. I was born and raised in Canada, but I have also lived in Japan, the Philippines, and the United States. I am happily married to my beautiful wife, and we have a 4-month-old son named Leo. I love learning new things, and you can often find me reading. I have been training in jiujitsu since I was eleven years old, and I also enjoy skiing and spending time playing with my son."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nBYU Department of Mathematics | Sep 2025 – Present\nGrader – Provo, UT\n- Assist faculty by grading Calculus I, II, and III homework assignments and exams.\n- Provide written feedback on student work, communicate concerns to instructors, and publish grades to Canvas via Gradescope.\n- Develop and apply grading rubrics to ensure consistent and fair evaluation.\nPride Gym | Sep 2019 – Jul 2022\nJiu Jitsu Instructor – Trail, BC, Canada\n- Instructed youth ages seven through twelve to safely and efficiently use various Jiu Jitsu techniques.\n- Ensured the safety and well-being of youth and maintained a safe working environment.\n- Coached and supervised youth in local competitions.\nMcDonald’s Canada | Aug 2020 – Jan 2022\nCrew Trainer – Trail, BC, Canada\n- Trained new hires on procedures and policies.\n- Took orders from guests, made beverages, and prepared orders.\n- Handled cash, credit card, and debit transactions.\n- Greeted customers in a friendly manner and ensured their needs were met.\n- Handled customer complaints calmly and professionally.\nThe Church of Jesus Christ of Latter-day Saints | Jul 2022 – Dec 2023\nJapanese Speaking Volunteer – Chūbu Region, Japan\n- Led groups of 10–12 volunteers, conducted weekly training meetings, followed up on goals, and created weekly progress reports.\n- Taught beginning and intermediate level weekly English as a second language classes based on the EnglishConnect curriculum.\n- Engaged in diverse service projects, including disaster relief, vineyard work, gardening, and assisting with relocations.\n- Delivered presentations and taught lessons in Japanese.\n- Used Canva to design graphics and advertisements and Excel for record-keeping."
   }
 ]
