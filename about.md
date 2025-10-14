@@ -28,19 +28,19 @@ I am an Applied Statistics major at Brigham Young University. I was born and rai
   
 ## Experience 
 
-BYU Department of Mathematics	| Sep 2025-PRESENT
+BYU Department of Mathematics	| Sep 2025-PRESENT<br>
 *Grader*    Provo, UT
 -	Assist faculty by grading Calculus I, II, and III homework assignments and exams.
 -	Provide written feedback on student work, communicate concerns to instructors, and publish grades to Canvas via Gradescope.
 -	Develop and apply grading rubrics to ensure consistent and fair evaluation.
 
-Pride Gym	| Sep 2019-Jul 2022
+Pride Gym	| Sep 2019-Jul 2022<br>
 *Jiu Jitsu Instructor*    Trail, BC, Canada
 - Instructed youth ages seven through twelve to safely and efficiently use various Jiu Jitsu techniques.
 - Ensured the safety and well-being of youth and maintained a safe working environment.
 - Coached and supervised youth in local competitions.
 
-McDonald’s Canada	| Aug 2020-Jan 2022
+McDonald’s Canada	| Aug 2020-Jan 2022<br>
 *Crew Trainer*	Trail, BC, Canada
 - Trained new hires on procedures and policies.
 - Took orders from guests, made beverages, and prepared orders.
@@ -48,7 +48,7 @@ McDonald’s Canada	| Aug 2020-Jan 2022
 -	Greeted customers in a friendly manner and ensured their needs were met.
 -	Handled customer complaints calmly and professionally.
 
-The Church of Jesus Christ of Latter-day Saints	| Jul 2022-Dec 2023
+The Church of Jesus Christ of Latter-day Saints	| Jul 2022-Dec 2023<br>
 *Japanese Speaking Volunteer*	    Chūbu Region, Japan
 
 -	Led groups of 10-12 volunteers, conducted weekly training meetings, followed up on goals, and created weekly progress reports. 
