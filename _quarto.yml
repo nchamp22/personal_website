@@ -20,8 +20,6 @@ website:
           - text: "All Projects"
             href: projects/index.md
           - text: "---"
-          - text: "Exploratory Data Analysis"
-            href: projects/eda.qmd
           - text: "Data Acquisition"
             href: projects/data-acquisition.qmd
           - text: "Final Project"
@@ -36,7 +34,6 @@ website:
     - title: "Projects"
       contents:
         - projects/index.md
-        - projects/eda.qmd
         - projects/data-acquisition.qmd
         - projects/final-project.qmd
 
