@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Welcome to my data science portfolio! This site is part of Brigham Young University’s STAT 386 Data Science Process class and showcases my journey in learning data science and analytics. As you explore this site, you’ll get to know a little more about my background, see some of the projects I am working on, and learn about the skills I am developing.\n\n\n\nProgramming: Python (including Pandas and Numpy)\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "Welcome to my data science portfolio! This site is part of Brigham Young University’s STAT 386 Data Science Process class and showcases my journey in learning data science and analytics. As you explore this site, you’ll get to know a little more about my background, see some of the projects I am working on, and learn about the skills I am developing.\n\n\n\nProgramming: Python (including Pandas and Numpy)\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
     "objectID": "index.html#about-this-portfolio",
@@ -46,7 +46,7 @@
     "href": "index.html#my-projects",
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
-    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "See how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
     "objectID": "projects/final-project.html",
@@ -272,7 +272,7 @@
     "href": "projects/data-acquisition.html#conclusion",
     "title": "Data Acquisition Blog",
     "section": "Conclusion",
-    "text": "Conclusion\nI hope that this blog was able to help you understand a little bit more about the web scraping process. My code that I used to scrape the Book of Mormon, as well as the CSV file that it curated, can be found at: this GitHub repository\nTry to scrape your own HTML-based book! Some possible options include: The New Testament and Hamlet, but make sure you read the robots.txt of any website to determine whether or not you should scrape it.\nFurther resources for learning more about web scraping can be found below:\n\nRequests Documentation\nBeautiful Soup Documentation\nBeautiful Soup Crash Course (YouTube)",
+    "text": "Conclusion\nI hope that this blog was able to help you understand a little bit more about the web scraping process. My code that I used to scrape the Book of Mormon, as well as the CSV file that it curated, can be found at this GitHub repository\nTry to scrape your own HTML-based book! Some possible options include: The New Testament and Hamlet, but make sure you read the robots.txt of any website to determine whether or not you should scrape it.\nFurther resources for learning more about web scraping can be found below:\n\nRequests Documentation\nBeautiful Soup Documentation\nBeautiful Soup Crash Course (YouTube)",
     "crumbs": [
       "Data Acquisition Blog"
     ]
