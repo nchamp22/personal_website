@@ -153,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="./projects/eda.html">
+    <a class="dropdown-item" href="./projects/eda.qmd">
  <span class="dropdown-text">Exploratory Data Analysis</span></a>
   </li>  
         <li>
@@ -169,12 +169,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/your-username"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nchamp22"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/your-profile"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/noah-champagne-98207a2a9/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -325,7 +325,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="loading-in-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="loading-in-the-data">Loading in the Data</h2>
 <p>Now that we understand what we are working with, we can load in the data. In Pandas, we can read in a CSV file with the following code <strong>(click on the dropdown arrow beside the word <code>code</code> to see the code and comments that explain how the code works)</strong>:</p>
-<div id="bcc94c62" class="cell" data-execution_count="1">
+<div id="9fbe45bd" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -432,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Additionally, the dataset contains a “Notes” column that does not contain any useful data, so we will remove it.</p>
 <p>Note that spelling is crucial in this step. In this dataset, “All Invasive Cancer Sites Combined” uses an uppercase “C” in “Combined,” whereas “Other Races and Unknown combined” uses a lowercase “c.”</p>
 <p><strong>Click on the dropdown arrow beside the word <code>code</code>below to see the code and comments that exolain how the code works. You will need to do this for the rest of the tutorial</strong>:</p>
-<div id="2b81a26c" class="cell" data-execution_count="2">
+<div id="b980f075" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -631,7 +631,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="bar-charts" class="level3">
 <h3 class="anchored" data-anchor-id="bar-charts">1. Bar Charts</h3>
 <p>Bar charts are ideal for grouping cancer counts by variables such as cancer site or race. In Pandas, we can group data, sum the counts, and plot it. The <code>kind</code> parameter specifies the type of chart:</p>
-<div id="44e80ad9" class="cell" data-execution_count="3">
+<div id="4e8c8cf3" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_filtered.groupby(<span class="st">'Cancer Sites'</span>)[<span class="st">'Count'</span>].<span class="bu">sum</span>().sort_values().plot(kind<span class="op">=</span><span class="st">'bar'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -646,7 +646,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>This graph is <strong>hard to interpret</strong> because the dataset contains many cancer sites. To make it more readable, we can focus on a subset of cancer sites. I chose: Stomach, Lung and Bronchus, Soft Tissue including Heart, Female Breast, Prostate, Kidney and Renal Pelvis, Brain, and Leukemias.</p>
 <p>Here is the code for that, with accompanying comments. Notice how we create a specific list of sites we want to include and then use the <code>.isin()</code> method to filter for them when we generate the plot:</p>
-<div id="8a805af3" class="cell" data-execution_count="4">
+<div id="fb288938" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List of specific cancer sites</span></span>
@@ -678,7 +678,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="stacked-bar-charts">2. Stacked Bar Charts</h3>
 <p>When we want to visualize how cancer counts are distributed across different groups, such as sex, age, or race, stacked bar charts are useful.</p>
 <p>When we make stacked bar charts, we can make use of the <code>.pivot_table()</code> method. In <code>pandas</code>, a pivot table is similiar to it’s Excel counterpart in that it is a way to summarize and aggregate data in a table format by specifying which columns to use as rows, which to use as columns, and which values to aggregate.</p>
-<div id="4c6ec636" class="cell" data-execution_count="5">
+<div id="ff50d542" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List of specific cancer sites, expanded</span></span>
@@ -732,7 +732,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In order to make heatmaps in Pandas, we will need to use the python visualization library <code>matplotlib</code>.</p>
 <p>First, let’s install matblotlib. In your terminal, run: <code>pip install matplotlib</code>.</p>
 <p>Next, run the following code to generate a heatmap:</p>
-<div id="4a68c4c4" class="cell" data-execution_count="6">
+<div id="29da040b" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -796,7 +796,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Pie charts are useful for showing how a total count is divided among categories, such as Male vs Female cases for a specific cancer type. They provide a quick visual sense of which group accounts for a larger proportion of cases.</p>
 <p>With Pandas, you can create a pie chart directly using the <code>plot(kind='pie')</code> method — no need to call <code>matplotlib</code> functions.</p>
 <p>Here is some code that shows how Liver and Intrahepatic Bile Duct cancer is distributed across the sexes:</p>
-<div id="94136780" class="cell" data-execution_count="7">
+<div id="04f06bce" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter for Liver and Intrahepatic Bile Duct cancer</span></span>
@@ -823,7 +823,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="scatter-plots" class="level3">
 <h3 class="anchored" data-anchor-id="scatter-plots">5. Scatter Plots</h3>
 <p>The last graph we’ll look at is a scatter plot, which shows the relationship between two numbers by plotting each data point as a dot. Here, we’ll use it to see how Liver and Intrahepatic Bile Duct cancer counts are spread across different age groups: &lt;1 year, 1–4 years, …, 80–84 years, and 85+ years.</p>
-<div id="016df759" class="cell" data-execution_count="8">
+<div id="d07c9985" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make the age categories into numbers first</span></span>
@@ -871,7 +871,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In this tutorial, we covered how to plot data using <code>pandas</code>. When we introduced the heatmap, we mentioned the Python library <code>matplotlib</code>. You can explore the wide variety of plot types available in <code>matplotlib</code> <a href="https://matplotlib.org/stable/plot_types/index.html">here</a>.</p>
 <p>Additionally, there are many ways to enhance your graphs, such as changing colors, adjusting axes, and more.</p>
 <p>Here is an example of how we might do that with a pie chart. Click on the <code>code</code> arrow to view the changes we made:</p>
-<div id="7dc68de5" class="cell" data-execution_count="9">
+<div id="fe32859c" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -918,7 +918,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" class="img-fluid figure-img"></p>
-<figcaption>Pyton Pandas Logo</figcaption>
+<figcaption>Python Pandas Logo</figcaption>
 </figure>
 </div>
 
@@ -1704,7 +1704,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-339"><a href="#cb10-339" aria-hidden="true" tabindex="-1"></a>**Now it's your turn!** Find a dataset and apply these techniques to it. You can explore great datasets on <span class="co">[</span><span class="ot">Data.gov</span><span class="co">](https://data.gov/)</span> or use your own data. If you want to learn more about <span class="in">`pandas`</span>, the documentation can be found on <span class="co">[</span><span class="ot">this website</span><span class="co">](https://pandas.pydata.org/docs/user_guide/index.html#user-guide)</span>.</span>
 <span id="cb10-340"><a href="#cb10-340" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-341"><a href="#cb10-341" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-342"><a href="#cb10-342" aria-hidden="true" tabindex="-1"></a><span class="al">![Pyton Pandas Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png)</span></span>
+<span id="cb10-342"><a href="#cb10-342" aria-hidden="true" tabindex="-1"></a><span class="al">![Python Pandas Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png)</span></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -61,11 +61,11 @@
   {
     "objectID": "projects/data-acquisition.html",
     "href": "projects/data-acquisition.html",
-    "title": "Data Acquisition Project",
+    "title": "Data Acquisition Blog",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
+    "text": "This blog post showcases how I used the Python package Beautiful Soup to curate a custom dataset. Finding a website to scrape can be challenging, as many sites with interesting data—such as Rate My Professors and other review platforms—disallow scraping.\nI ultimately decided to scrape the Book of Mormon, found on the Church of Jesus Christ of Latter-day Saints’ website. My goal was to gather data on each chapter, including the chapter summary, the average verse length per chapter, and the most frequent word in each chapter. I thought this would be interesting both as a personal project and as an example for others wanting to learn how to use Beautiful Soup to scrape other HTML-based texts.",
     "crumbs": [
-      "Data Acquisition Project"
+      "Data Acquisition Blog"
     ]
   },
   {
@@ -194,7 +194,7 @@
     "href": "blog.html#conclusion",
     "title": "Data Science Blog: Working with Data in Pandas Tutorial",
     "section": "Conclusion",
-    "text": "Conclusion\nI hope this tutorial helped you understand how to use the Python library pandas to clean and filter a dataset, as well as how to use different types of plots to visualize and analyze the data.\nNow it’s your turn! Find a dataset and apply these techniques to it. You can explore great datasets on Data.gov or use your own data. If you want to learn more about pandas, the documentation can be found on this website.\n\n\n\nPyton Pandas Logo"
+    "text": "Conclusion\nI hope this tutorial helped you understand how to use the Python library pandas to clean and filter a dataset, as well as how to use different types of plots to visualize and analyze the data.\nNow it’s your turn! Find a dataset and apply these techniques to it. You can explore great datasets on Data.gov or use your own data. If you want to learn more about pandas, the documentation can be found on this website.\n\n\n\nPython Pandas Logo"
   },
   {
     "objectID": "blog.html#going-futher-with-graphing",
@@ -216,5 +216,65 @@
     "title": "About Me",
     "section": "Experience",
     "text": "Experience\nBYU Department of Mathematics | Sep 2025 – Present\nGrader – Provo, UT\n- Assist faculty by grading Calculus I, II, and III homework assignments and exams.\n- Provide written feedback on student work, communicate concerns to instructors, and publish grades to Canvas via Gradescope.\n- Develop and apply grading rubrics to ensure consistent and fair evaluation.\nPride Gym | Sep 2019 – Jul 2022\nJiu Jitsu Instructor – Trail, BC, Canada\n- Instructed youth ages seven through twelve to safely and efficiently use various Jiu Jitsu techniques.\n- Ensured the safety and well-being of youth and maintained a safe working environment.\n- Coached and supervised youth in local competitions.\nMcDonald’s Canada | Aug 2020 – Jan 2022\nCrew Trainer – Trail, BC, Canada\n- Trained new hires on procedures and policies.\n- Took orders from guests, made beverages, and prepared orders.\n- Handled cash, credit card, and debit transactions.\n- Greeted customers in a friendly manner and ensured their needs were met.\n- Handled customer complaints calmly and professionally.\nThe Church of Jesus Christ of Latter-day Saints | Jul 2022 – Dec 2023\nJapanese Speaking Volunteer – Chūbu Region, Japan\n- Led groups of 10–12 volunteers, conducted weekly training meetings, followed up on goals, and created weekly progress reports.\n- Taught beginning and intermediate level weekly English as a second language classes based on the EnglishConnect curriculum.\n- Engaged in diverse service projects, including disaster relief, vineyard work, gardening, and assisting with relocations.\n- Delivered presentations and taught lessons in Japanese.\n- Used Canva to design graphics and advertisements and Excel for record-keeping."
+  },
+  {
+    "objectID": "projects/data-acquisition.html#introduction",
+    "href": "projects/data-acquisition.html#introduction",
+    "title": "Data Acquisition Blog",
+    "section": "",
+    "text": "This blog post showcases how I used the Python package Beautiful Soup to curate a custom dataset. Finding a website to scrape can be challenging, as many sites with interesting data—such as Rate My Professors and other review platforms—disallow scraping.\nI ultimately decided to scrape the Book of Mormon, found on the Church of Jesus Christ of Latter-day Saints’ website. My goal was to gather data on each chapter, including the chapter summary, the average verse length per chapter, and the most frequent word in each chapter. I thought this would be interesting both as a personal project and as an example for others wanting to learn how to use Beautiful Soup to scrape other HTML-based texts.",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#ethics",
+    "href": "projects/data-acquisition.html#ethics",
+    "title": "Data Acquisition Blog",
+    "section": "Ethics",
+    "text": "Ethics\nBefore scraping any website, it’s important to review the site’s robots.txt file—a plain text file that provides instructions about which pages may or may not be crawled or scraped.\nThe Church of Jesus Christ of Latter-day Saints’ robots.txt disallows scraping of certain parts of its website, such as /scriptures/search and /study/manual/handbook-1, but does not prohibit access to /study/scriptures/bofm?lang=eng, which is the section containing the Book of Mormon. See below for a portion of the robots.txt file:\n\n\n\nrobots.txt for the Church of Jesus Christ of Latter-day Saints’ website\n\n\nThere was also no rate limit or time-delay restriction specified between requests. Based on this information, I determined that scraping this data was ethically acceptable.",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#how-the-data-was-gathered",
+    "href": "projects/data-acquisition.html#how-the-data-was-gathered",
+    "title": "Data Acquisition Blog",
+    "section": "How the Data Was Gathered",
+    "text": "How the Data Was Gathered\nFor this project, I used the following Python libraries:\n\nrequests for making HTTP requests.\n\nBeautifulSoup for xtracting data from web pages.\n\npandas for analyzing and manipulating data.\n\nre to search, match, and manipulate text using regular expressions.\n\ncollections.Counter, a tool I hadn’t used before, which counts the occurrences of items in a list or sequence. This was helpful for finding the most common word in each chapter.\n\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nfrom collections import Counter\nimport re\nMany words appear frequently but are not meaningful for analysis, including prepositions, transition words, and other common words in older texts. I labeled these as trivial_words in my code. This allowed me to focus on the interesting, non-trivial words that were most common.\nTo loop through each book in the Book of Mormon, I created a list called books and a base_url to append each book to, as shown below:\n\nbooks = [\n    \"1-ne\", \"2-ne\", \"jacob\", \"enos\", \"jarom\", \"omni\", \"w-of-m\",\n    \"mosiah\", \"alma\", \"hel\", \"3-ne\", \"4-ne\", \"morm\", \"ether\", \"moro\"\n]\n\nbase_url = \"https://www.churchofjesuschrist.org/study/scriptures/bofm\"\nUsing the requests library with UTF-8 character encoding (to avoid strange characters like â€”), I inspected the HTML to locate the content of interest:\nChapter summaries in class_=\"study-summary\"\nScripture verses in class_=\"verse\"\nI also removed footnotes to get plain text by targeting the class_=\"study-note-ref\" elements and using the decompose() method to delete them.\nThis process was repeated for each chapter in each Book of Mormon book if the number of verses was greater than zero. If a chapter did not exist, the URL redirected to the book’s main page (showing all chapters and summaries with no verses), which allowed the code to break out of the loop and move to the next book.\nOnce all the data was gathered, it was compiled into a pandas DataFrame that looked like the following table:\n\n\n\n\n\n\n\n\n\n\n\nBook\nChapter\nSummary\nNum Verses\nMost Common Word\nAvg Words per Verse\n\n\n\n\n1 Nephi\n1\nNephi begins the record of his people …\n20\nfather\n43.9\n\n\n1 Nephi\n2\nLehi takes his family …\n24\nlord\n35.29\n\n\n1 Nephi\n3\nLehi’s sons return to Jerusalem …\n31\nlord\n34.19\n\n\n1 Nephi\n4\nNephi slays Laban …\n38\nlaban\n33.05",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#exploratory-data-analysis",
+    "href": "projects/data-acquisition.html#exploratory-data-analysis",
+    "title": "Data Acquisition Blog",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\nNow that we have a dataset, we can do some EDA. Click on the arrow beside the word code to view the code chunks for each anaylsis\nWe might want to find how many oberservations (rows) the data frame has:\n\n\nCode\nimport pandas as pd\n\ndf = pd.read_csv(\"book_of_mormon_dataset.csv\")\nlen(df)\n\n\n239\n\n\nWe might want to know the top 5 most common non-trivial words that show up in the Book of Mormon:\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ntop_words = df['most_common_word'].value_counts().head(5)\n\nplt.figure(figsize=(8,5))\ntop_words.plot(kind='bar', color='skyblue')\nplt.title(\"Top 5 Most Common Words in Chapters of the Book of Mormon\")\nplt.xlabel(\"Word\")\nplt.ylabel(\"Frequency\")\nplt.xticks(rotation=45)\nplt.ylim(0, 50)\nplt.show()\n\n\n\n\n\n\n\n\n\nIt is interesting that people is the most common word non-trivial word per chapter, showing up over\nWe can also find some summary statistics about the data:\n\n\nCode\nmean_verses = df['num_verses'].mean()\nstd_verses = df['num_verses'].std()\nprint(f\"Mean number of verses per chapter is {mean_verses:.2f} with a standard deviation of {std_verses:.2f}\")\n\nmean_words = df['avg_words_per_verse'].mean()\nstd_words = df['avg_words_per_verse'].std()\nprint(f\"The mean words per verse is {mean_words:.2f} with a standard deviation of {std_words:.2f}\")\n\n\nMean number of verses per chapter is 27.63 with a standard deviation of 11.92\nThe mean words per verse is 39.85 with a standard deviation of 6.70\n\n\nA histogram of the average words per verse looks like:\n\n\nCode\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8,5))\nplt.hist(df['avg_words_per_verse'], bins=15, color='lightgreen', edgecolor='black')\nplt.title(\"Distribution of Average Words per Verse\")\nplt.xlabel(\"Average Words per Verse\")\nplt.ylabel(\"Number of Chapters\")\nplt.show()\n\n\n\n\n\n\n\n\n\nIs there a correclation between number of verses in a chapter and average words per verse. In other words, do longer chapters have longer verses? Lets see:\n\n\nCode\ndf[['num_verses', 'avg_words_per_verse']].corr()\n\n\n\n\n\n\n\n\n\nnum_verses\navg_words_per_verse\n\n\n\n\nnum_verses\n1.000000\n0.010976\n\n\navg_words_per_verse\n0.010976\n1.000000\n\n\n\n\n\n\n\nIt looks like there’s almost no linear relationship between chapter length (number of verses) and the average number of words per verse. In other words, longer chapters don’t necessarily have longer verses, and shorter chapters don’t necessarily have shorter verses.\nThis is easily visualized by the scatterplot below:\n\n\nCode\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8,5))\nplt.scatter(df['num_verses'], df['avg_words_per_verse'], alpha=0.6)\nplt.title(\"Num Verses vs Avg Words per Verse\")\nplt.xlabel(\"Number of Verses\")\nplt.ylabel(\"Average Words per Verse\")\nplt.show()",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#exploratory-data-analysis-eda",
+    "href": "projects/data-acquisition.html#exploratory-data-analysis-eda",
+    "title": "Data Acquisition Blog",
+    "section": "Exploratory Data Analysis (EDA)",
+    "text": "Exploratory Data Analysis (EDA)\nNow that we have a dataset, we can perform some Exploratory Data Analysis (EDA). Click on the arrow beside the word code to view the code chunks for each analysis.\n\n\n1. Dataset Dimensions\nWe want to find out how many observations (rows) the dataframe contains:\n\n\nCode\nimport pandas as pd\n\ndf = pd.read_csv(\"book_of_mormon_dataset.csv\")\n# Output: The number of rows in the DataFrame\nlen(df) \n\n\n239\n\n\n\n\n\n2. Top 5 Most Common Words\nWe want to know the top 5 most common non-trivial words that show up in the Book of Mormon:\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ntop_words = df['most_common_word'].value_counts().head(5)\n\nplt.figure(figsize=(8,5))\ntop_words.plot(kind='bar', color='skyblue')\nplt.title(\"Top 5 Most Common Words in Chapters of the Book of Mormon\")\nplt.xlabel(\"Word\")\nplt.ylabel(\"Frequency\")\nplt.xticks(rotation=45)\nplt.ylim(0, 50)\nplt.show()\n\n\n\n\n\n\n\n\n\nIt’s interesting that “people” is the most common non-trivial word per chapter, appearing nearly 50 times. Being a religious text, it makes sense that “Lord” and “God” are the next most common. I find it insightful that “behold” was relatively common, suggesting that the Book of Mormon emphasizes the importance of listening to God and His commandments.\n\n\n\n3. Summary Statistics\nWe can also find some summary statistics about the data:\n\n\nCode\nmean_verses = df['num_verses'].mean()\nstd_verses = df['num_verses'].std()\nprint(f\"Mean number of verses per chapter is {mean_verses:.2f} with a standard deviation of {std_verses:.2f}\")\n\nmean_words = df['avg_words_per_verse'].mean()\nstd_words = df['avg_words_per_verse'].std()\nprint(f\"The mean words per verse is {mean_words:.2f} with a standard deviation of {std_words:.2f}\")\n\n\nMean number of verses per chapter is 27.63 with a standard deviation of 11.92\nThe mean words per verse is 39.85 with a standard deviation of 6.70\n\n\nA histogram of the average words per verse looks like:\n\n\nCode\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8,5))\nplt.hist(df['avg_words_per_verse'], bins=15, color='lightgreen', edgecolor='black')\nplt.title(\"Distribution of Average Words per Verse\")\nplt.xlabel(\"Average Words per Verse\")\nplt.ylabel(\"Number of Chapters\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n4. Correlation Analysis: Verse Length\nIs there a correlation between the number of verses in a chapter and the average words per verse? In other words, do longer chapters have longer verses? Let’s see:\n\n\nCode\n# Output: Correlation matrix for the two columns\ndf[['num_verses', 'avg_words_per_verse']].corr() \n\n\n\n\n\n\n\n\n\nnum_verses\navg_words_per_verse\n\n\n\n\nnum_verses\n1.000000\n0.010976\n\n\navg_words_per_verse\n0.010976\n1.000000\n\n\n\n\n\n\n\nThe result indicates there’s almost no linear relationship between chapter length (number of verses) and the average number of words per verse. This means longer chapters don’t necessarily have longer verses, and shorter chapters don’t necessarily have shorter verses.\nThis is easily visualized by the scatterplot below:\n\n\nCode\nimport matplotlib.pyplot as plt\n\nplt.figure(figsize=(8,5))\nplt.scatter(df['num_verses'], df['avg_words_per_verse'], alpha=0.6)\nplt.title(\"Number of Verses vs. Average Words per Verse\")\nplt.xlabel(\"Number of Verses\")\nplt.ylabel(\"Average Words per Verse\")\nplt.show()",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#conclusion",
+    "href": "projects/data-acquisition.html#conclusion",
+    "title": "Data Acquisition Blog",
+    "section": "Conclusion",
+    "text": "Conclusion\nI hope that this blog was able to help you understand a little bit more about the web scraping process. My code that I used to scrape the Book of Mormon, as well as the CSV file that it curated, can be found at: this GitHub repository\nTry to scrape your own HTML-based book! Some possible options include: The New Testament and Hamlet, but make sure you read the robots.txt of any website to determine whether or not you should scrape it.\nFurther resources for learning more about web scraping can be found below:\n\nRequests Documentation\nBeautiful Soup Documentation\nBeautiful Soup Crash Course (YouTube)",
+    "crumbs": [
+      "Data Acquisition Blog"
+    ]
   }
 ]

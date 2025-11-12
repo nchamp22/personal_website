@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="author" content="Noah Champagne">
+<meta name="dcterms.date" content="2025-11-12">
 
-<title>Data Acquisition Project – Noah Champagne - Data Science Portfolio</title>
+<title>Data Acquisition Blog – Noah Champagne - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -105,6 +105,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -152,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="../projects/eda.html">
+    <a class="dropdown-item" href="../projects/eda.qmd">
  <span class="dropdown-text">Exploratory Data Analysis</span></a>
   </li>  
         <li>
@@ -173,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/noah-champagne"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/noah-champagne-98207a2a9/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -188,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/data-acquisition.html">Data Acquisition Project</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/data-acquisition.html">Data Acquisition Blog</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -211,15 +214,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
         <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../projects/eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">EDA Project</span></a>
-  </div>
-</li>
+ <span class="menu-text">projects/eda.qmd</span>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/data-acquisition.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Acquisition Project</span></a>
+ <span class="menu-text">Data Acquisition Blog</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -233,15 +233,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#ethics" id="toc-ethics" class="nav-link" data-scroll-target="#ethics">Ethics</a></li>
+  <li><a href="#how-the-data-was-gathered" id="toc-how-the-data-was-gathered" class="nav-link" data-scroll-target="#how-the-data-was-gathered">How the Data Was Gathered</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
+  <ul class="collapse">
+  <li><a href="#dataset-dimensions" id="toc-dataset-dimensions" class="nav-link" data-scroll-target="#dataset-dimensions"><strong>1. Dataset Dimensions</strong></a></li>
+  <li><a href="#top-5-most-common-words" id="toc-top-5-most-common-words" class="nav-link" data-scroll-target="#top-5-most-common-words"><strong>2. Top 5 Most Common Words</strong></a></li>
+  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics"><strong>3. Summary Statistics</strong></a></li>
+  <li><a href="#correlation-analysis-verse-length" id="toc-correlation-analysis-verse-length" class="nav-link" data-scroll-target="#correlation-analysis-verse-length"><strong>4. Correlation Analysis: Verse Length</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Project</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Blog</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -251,14 +267,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Noah Champagne </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">November 12, 2025</p>
     </div>
   </div>
   
@@ -270,11 +286,284 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is coming down the pipeline. Check again later.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This blog post showcases how I used the Python package <code>Beautiful Soup</code> to curate a custom dataset. Finding a website to scrape can be challenging, as many sites with interesting data—such as <strong>Rate My Professors</strong> and other review platforms—disallow scraping.</p>
+<p>I ultimately decided to scrape the <em>Book of Mormon</em>, found on the <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng">Church of Jesus Christ of Latter-day Saints’ website</a>. My goal was to gather data on each chapter, including the chapter summary, the average verse length per chapter, and the most frequent word in each chapter. I thought this would be interesting both as a personal project and as an example for others wanting to learn how to use Beautiful Soup to scrape other HTML-based texts.</p>
+</section>
+<section id="ethics" class="level2">
+<h2 class="anchored" data-anchor-id="ethics">Ethics</h2>
+<p>Before scraping any website, it’s important to review the site’s <code>robots.txt</code> file—a plain text file that provides instructions about which pages may or may not be crawled or scraped.</p>
+<p>The <strong>Church of Jesus Christ of Latter-day Saints’</strong> <code>robots.txt</code> disallows scraping of certain parts of its website, such as <code>/scriptures/search</code> and <code>/study/manual/handbook-1</code>, but does <strong>not</strong> prohibit access to <code>/study/scriptures/bofm?lang=eng</code>, which is the section containing the <em>Book of Mormon</em>. See below for a portion of the <code>robots.txt</code> file:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="robots.png" class="img-fluid figure-img"></p>
+<figcaption>robots.txt for the Church of Jesus Christ of Latter-day Saints’ website</figcaption>
+</figure>
+</div>
+<p>There was also no rate limit or time-delay restriction specified between requests. Based on this information, I determined that scraping this data was ethically acceptable.</p>
+</section>
+<section id="how-the-data-was-gathered" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-data-was-gathered">How the Data Was Gathered</h2>
+<p>For this project, I used the following Python libraries:</p>
+<ul>
+<li><code>requests</code> for making HTTP requests.<br>
+</li>
+<li><code>BeautifulSoup</code> for xtracting data from web pages.<br>
+</li>
+<li><code>pandas</code> for analyzing and manipulating data.<br>
+</li>
+<li><code>re</code> to search, match, and manipulate text using regular expressions.<br>
+</li>
+<li><code>collections.Counter</code>, a tool I hadn’t used before, which counts the occurrences of items in a list or sequence. This was helpful for finding the most common word in each chapter.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Many words appear frequently but are not meaningful for analysis, including prepositions, transition words, and other common words in older texts. I labeled these as <code>trivial_words</code> in my code. This allowed me to focus on the interesting, non-trivial words that were most common.</p>
+<p>To loop through each book in the <em>Book of Mormon</em>, I created a list called <code>books</code> and a <code>base_url</code> to append each book to, as shown below:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>books <span class="op">=</span> [</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1-ne"</span>, <span class="st">"2-ne"</span>, <span class="st">"jacob"</span>, <span class="st">"enos"</span>, <span class="st">"jarom"</span>, <span class="st">"omni"</span>, <span class="st">"w-of-m"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"mosiah"</span>, <span class="st">"alma"</span>, <span class="st">"hel"</span>, <span class="st">"3-ne"</span>, <span class="st">"4-ne"</span>, <span class="st">"morm"</span>, <span class="st">"ether"</span>, <span class="st">"moro"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>base_url <span class="op">=</span> <span class="st">"https://www.churchofjesuschrist.org/study/scriptures/bofm"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Using the requests library with UTF-8 character encoding (to avoid strange characters like â€”), I inspected the HTML to locate the content of interest:</p>
+<p>Chapter summaries in <code>class_="study-summary"</code></p>
+<p>Scripture verses in <code>class_="verse"</code></p>
+<p>I also removed footnotes to get plain text by targeting the <code>class_="study-note-ref"</code> elements and using the <code>decompose()</code> method to delete them.</p>
+<p>This process was repeated for each chapter in each Book of Mormon book if the number of verses was greater than zero. If a chapter did not exist, the URL redirected to the book’s main page (showing all chapters and summaries with no verses), which allowed the code to break out of the loop and move to the next book.</p>
+<p>Once all the data was gathered, it was compiled into a pandas DataFrame that looked like the following table:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 22%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Book</th>
+<th>Chapter</th>
+<th>Summary</th>
+<th>Num Verses</th>
+<th>Most Common Word</th>
+<th>Avg Words per Verse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 Nephi</td>
+<td>1</td>
+<td>Nephi begins the record of his people …</td>
+<td>20</td>
+<td>father</td>
+<td>43.9</td>
+</tr>
+<tr class="even">
+<td>1 Nephi</td>
+<td>2</td>
+<td>Lehi takes his family …</td>
+<td>24</td>
+<td>lord</td>
+<td>35.29</td>
+</tr>
+<tr class="odd">
+<td>1 Nephi</td>
+<td>3</td>
+<td>Lehi’s sons return to Jerusalem …</td>
+<td>31</td>
+<td>lord</td>
+<td>34.19</td>
+</tr>
+<tr class="even">
+<td>1 Nephi</td>
+<td>4</td>
+<td>Nephi slays Laban …</td>
+<td>38</td>
+<td>laban</td>
+<td>33.05</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exploratory-data-analysis-eda" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h2>
+<p>Now that we have a dataset, we can perform some <strong>Exploratory Data Analysis (EDA)</strong>. Click on the arrow beside the word <code>code</code> to view the code chunks for each analysis.</p>
+<hr>
+<section id="dataset-dimensions" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-dimensions"><strong>1. Dataset Dimensions</strong></h3>
+<p>We want to find out how many <strong>observations (rows)</strong> the dataframe contains:</p>
+<div id="209473e8" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"book_of_mormon_dataset.csv"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: The number of rows in the DataFrame</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(df) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<pre><code>239</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="top-5-most-common-words" class="level3">
+<h3 class="anchored" data-anchor-id="top-5-most-common-words"><strong>2. Top 5 Most Common Words</strong></h3>
+<p>We want to know the <strong>top 5 most common non-trivial words</strong> that show up in the <em>Book of Mormon</em>:</p>
+<div id="0f04402b" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>top_words <span class="op">=</span> df[<span class="st">'most_common_word'</span>].value_counts().head(<span class="dv">5</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>top_words.plot(kind<span class="op">=</span><span class="st">'bar'</span>, color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Top 5 Most Common Words in Chapters of the Book of Mormon"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Word"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Frequency"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">50</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-3-output-1.png" width="659" height="478" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It’s interesting that “<strong>people</strong>” is the most common non-trivial word per chapter, appearing nearly 50 times. Being a religious text, it makes sense that “<strong>Lord</strong>” and “<strong>God</strong>” are the next most common. I find it insightful that “<strong>behold</strong>” was relatively common, suggesting that the <em>Book of Mormon</em> emphasizes the importance of listening to God and His commandments.</p>
+<hr>
+</section>
+<section id="summary-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="summary-statistics"><strong>3. Summary Statistics</strong></h3>
+<p>We can also find some summary statistics about the data:</p>
+<div id="cf25c9ce" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>mean_verses <span class="op">=</span> df[<span class="st">'num_verses'</span>].mean()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>std_verses <span class="op">=</span> df[<span class="st">'num_verses'</span>].std()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean number of verses per chapter is </span><span class="sc">{</span>mean_verses<span class="sc">:.2f}</span><span class="ss"> with a standard deviation of </span><span class="sc">{</span>std_verses<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>mean_words <span class="op">=</span> df[<span class="st">'avg_words_per_verse'</span>].mean()</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>std_words <span class="op">=</span> df[<span class="st">'avg_words_per_verse'</span>].std()</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The mean words per verse is </span><span class="sc">{</span>mean_words<span class="sc">:.2f}</span><span class="ss"> with a standard deviation of </span><span class="sc">{</span>std_words<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean number of verses per chapter is 27.63 with a standard deviation of 11.92
+The mean words per verse is 39.85 with a standard deviation of 6.70</code></pre>
+</div>
+</div>
+<p>A <strong>histogram</strong> of the average words per verse looks like:</p>
+<div id="1a1447bc" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.hist(df[<span class="st">'avg_words_per_verse'</span>], bins<span class="op">=</span><span class="dv">15</span>, color<span class="op">=</span><span class="st">'lightgreen'</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Distribution of Average Words per Verse"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Average Words per Verse"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Chapters"</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-5-output-1.png" width="659" height="449" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="correlation-analysis-verse-length" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-analysis-verse-length"><strong>4. Correlation Analysis: Verse Length</strong></h3>
+<p>Is there a <strong>correlation</strong> between the number of verses in a chapter and the average words per verse? In other words, do longer chapters have longer verses? Let’s see:</p>
+<div id="6da37b71" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: Correlation matrix for the two columns</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'num_verses'</span>, <span class="st">'avg_words_per_verse'</span>]].corr() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">num_verses</th>
+<th data-quarto-table-cell-role="th">avg_words_per_verse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">num_verses</th>
+<td>1.000000</td>
+<td>0.010976</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">avg_words_per_verse</th>
+<td>0.010976</td>
+<td>1.000000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The result indicates there’s almost <strong>no linear relationship</strong> between chapter length (number of verses) and the average number of words per verse. This means longer chapters don’t necessarily have longer verses, and shorter chapters don’t necessarily have shorter verses.</p>
+<p>This is easily visualized by the <strong>scatterplot</strong> below:</p>
+<div id="f0ea6e99" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[<span class="st">'num_verses'</span>], df[<span class="st">'avg_words_per_verse'</span>], alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Number of Verses vs. Average Words per Verse"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Verses"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Average Words per Verse"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-7-output-1.png" width="662" height="449" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>I hope that this blog was able to help you understand a little bit more about the <strong>web scraping</strong> process. My code that I used to scrape the <em>Book of Mormon</em>, as well as the CSV file that it curated, can be found at: <a href="https://github.com/nchamp22/Data-Acquisition-Blog">this GitHub repository</a></p>
+<p>Try to scrape your own HTML-based book! Some possible options include: <a href="https://www.churchofjesuschrist.org/study/scriptures/nt?lang=eng">The New Testament</a> and <a href="https://www.folger.edu/explore/shakespeares-works/hamlet/read/1/1/">Hamlet</a>, but <strong>make sure you read the <code>robots.txt</code> of any website to determine whether or not you should scrape it.</strong></p>
+<p>Further resources for learning more about web scraping can be found below:</p>
+<ul>
+<li><a href="https://requests.readthedocs.io/en/latest/">Requests Documentation</a></li>
+<li><a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup Documentation</a></li>
+<li><a href="https://www.youtube.com/watch?v=XVv6mJpFOb0">Beautiful Soup Crash Course (YouTube)</a></li>
+</ul>
 
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -728,17 +1017,199 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-01"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This is coming down the pipeline. Check again later.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Blog"</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Noah Champagne"</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-11-12"</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>This blog post showcases how I used the Python package <span class="in">`Beautiful Soup`</span> to curate a custom dataset. Finding a website to scrape can be challenging, as many sites with interesting data—such as **Rate My Professors** and other review platforms—disallow scraping.  </span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>I ultimately decided to scrape the *Book of Mormon*, found on the <span class="co">[</span><span class="ot">Church of Jesus Christ of Latter-day Saints’ website</span><span class="co">](https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng)</span>. My goal was to gather data on each chapter, including the chapter summary, the average verse length per chapter, and the most frequent word in each chapter. I thought this would be interesting both as a personal project and as an example for others wanting to learn how to use Beautiful Soup to scrape other HTML-based texts.</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ethics</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>Before scraping any website, it’s important to review the site’s <span class="in">`robots.txt`</span> file—a plain text file that provides instructions about which pages may or may not be crawled or scraped.  </span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>The **Church of Jesus Christ of Latter-day Saints’** `robots.txt` disallows scraping of certain parts of its website, such as `/scriptures/search` and `/study/manual/handbook-1`, but does **not** prohibit access to <span class="in">`/study/scriptures/bofm?lang=eng`</span>, which is the section containing the *Book of Mormon*. See below for a portion of the <span class="in">`robots.txt`</span> file:</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="al">![robots.txt for the Church of Jesus Christ of Latter-day Saints’ website](robots.png)</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>There was also no rate limit or time-delay restriction specified between requests. Based on this information, I determined that scraping this data was ethically acceptable.</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## How the Data Was Gathered</span></span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>For this project, I used the following Python libraries:</span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`requests`</span> for making HTTP requests.  </span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`BeautifulSoup`</span> for xtracting data from web pages.  </span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`pandas`</span> for analyzing and manipulating data.  </span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`re`</span> to search, match, and manipulate text using regular expressions.  </span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`collections.Counter`</span>, a tool I hadn’t used before, which counts the occurrences of items in a list or sequence. This was helpful for finding the most common word in each chapter.</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> Counter</span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>Many words appear frequently but are not meaningful for analysis, including prepositions, transition words, and other common words in older texts. I labeled these as <span class="in">`trivial_words`</span> in my code. This allowed me to focus on the interesting, non-trivial words that were most common.</span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a>To loop through each book in the *Book of Mormon*, I created a list called <span class="in">`books`</span> and a <span class="in">`base_url`</span> to append each book to, as shown below:</span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>books <span class="op">=</span> [</span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1-ne"</span>, <span class="st">"2-ne"</span>, <span class="st">"jacob"</span>, <span class="st">"enos"</span>, <span class="st">"jarom"</span>, <span class="st">"omni"</span>, <span class="st">"w-of-m"</span>,</span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>    <span class="st">"mosiah"</span>, <span class="st">"alma"</span>, <span class="st">"hel"</span>, <span class="st">"3-ne"</span>, <span class="st">"4-ne"</span>, <span class="st">"morm"</span>, <span class="st">"ether"</span>, <span class="st">"moro"</span></span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a>base_url <span class="op">=</span> <span class="st">"https://www.churchofjesuschrist.org/study/scriptures/bofm"</span></span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>Using the requests library with UTF-8 character encoding (to avoid strange characters like â€”), I inspected the HTML to locate the content of interest:</span>
+<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>Chapter summaries in <span class="in">`class_="study-summary"`</span></span>
+<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>Scripture verses in <span class="in">`class_="verse"`</span></span>
+<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a>I also removed footnotes to get plain text by targeting the <span class="in">`class_="study-note-ref"`</span> elements and using the <span class="in">`decompose()`</span> method to delete them.</span>
+<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a>This process was repeated for each chapter in each Book of Mormon book if the number of verses was greater than zero. If a chapter did not exist, the URL redirected to the book’s main page (showing all chapters and summaries with no verses), which allowed the code to break out of the loop and move to the next book.</span>
+<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>Once all the data was gathered, it was compiled into a pandas DataFrame that looked like the following table:</span>
+<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-72"><a href="#cb11-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-73"><a href="#cb11-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Book  <span class="pp">|</span> Chapter <span class="pp">|</span> Summary <span class="pp">|</span> Num Verses <span class="pp">|</span> Most Common Word <span class="pp">|</span> Avg Words per Verse <span class="pp">|</span></span>
+<span id="cb11-74"><a href="#cb11-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------|----------|----------|-------------|------------------|---------------------|</span></span>
+<span id="cb11-75"><a href="#cb11-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1 Nephi <span class="pp">|</span> 1 <span class="pp">|</span> Nephi begins the record of his people ... <span class="pp">|</span> 20 <span class="pp">|</span> father <span class="pp">|</span> 43.9 <span class="pp">|</span></span>
+<span id="cb11-76"><a href="#cb11-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1 Nephi <span class="pp">|</span> 2 <span class="pp">|</span> Lehi takes his family ...<span class="pp">|</span> 24 <span class="pp">|</span> lord <span class="pp">|</span> 35.29 <span class="pp">|</span></span>
+<span id="cb11-77"><a href="#cb11-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1 Nephi <span class="pp">|</span> 3 <span class="pp">|</span> Lehi’s sons return to Jerusalem ... <span class="pp">|</span> 31 <span class="pp">|</span> lord <span class="pp">|</span> 34.19 <span class="pp">|</span></span>
+<span id="cb11-78"><a href="#cb11-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 1 Nephi <span class="pp">|</span> 4 <span class="pp">|</span> Nephi slays Laban ... <span class="pp">|</span> 38 <span class="pp">|</span> laban <span class="pp">|</span> 33.05 <span class="pp">|</span></span>
+<span id="cb11-79"><a href="#cb11-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-80"><a href="#cb11-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-81"><a href="#cb11-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Exploratory Data Analysis (EDA)</span></span>
+<span id="cb11-82"><a href="#cb11-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-83"><a href="#cb11-83" aria-hidden="true" tabindex="-1"></a>Now that we have a dataset, we can perform some **Exploratory Data Analysis (EDA)**. Click on the arrow beside the word <span class="in">`code`</span> to view the code chunks for each analysis.</span>
+<span id="cb11-84"><a href="#cb11-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-85"><a href="#cb11-85" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb11-86"><a href="#cb11-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-87"><a href="#cb11-87" aria-hidden="true" tabindex="-1"></a><span class="fu">### **1. Dataset Dimensions**</span></span>
+<span id="cb11-88"><a href="#cb11-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-89"><a href="#cb11-89" aria-hidden="true" tabindex="-1"></a>We want to find out how many **observations (rows)** the dataframe contains:</span>
+<span id="cb11-90"><a href="#cb11-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-93"><a href="#cb11-93" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-94"><a href="#cb11-94" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-95"><a href="#cb11-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-96"><a href="#cb11-96" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"book_of_mormon_dataset.csv"</span>)</span>
+<span id="cb11-97"><a href="#cb11-97" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: The number of rows in the DataFrame</span></span>
+<span id="cb11-98"><a href="#cb11-98" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(df) </span>
+<span id="cb11-99"><a href="#cb11-99" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-100"><a href="#cb11-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-101"><a href="#cb11-101" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb11-102"><a href="#cb11-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-103"><a href="#cb11-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### **2. Top 5 Most Common Words**</span></span>
+<span id="cb11-104"><a href="#cb11-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-105"><a href="#cb11-105" aria-hidden="true" tabindex="-1"></a>We want to know the **top 5 most common non-trivial words** that show up in the *Book of Mormon*:</span>
+<span id="cb11-106"><a href="#cb11-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-109"><a href="#cb11-109" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-110"><a href="#cb11-110" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb11-111"><a href="#cb11-111" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-112"><a href="#cb11-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-113"><a href="#cb11-113" aria-hidden="true" tabindex="-1"></a>top_words <span class="op">=</span> df[<span class="st">'most_common_word'</span>].value_counts().head(<span class="dv">5</span>)</span>
+<span id="cb11-114"><a href="#cb11-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-115"><a href="#cb11-115" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb11-116"><a href="#cb11-116" aria-hidden="true" tabindex="-1"></a>top_words.plot(kind<span class="op">=</span><span class="st">'bar'</span>, color<span class="op">=</span><span class="st">'skyblue'</span>)</span>
+<span id="cb11-117"><a href="#cb11-117" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Top 5 Most Common Words in Chapters of the Book of Mormon"</span>)</span>
+<span id="cb11-118"><a href="#cb11-118" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Word"</span>)</span>
+<span id="cb11-119"><a href="#cb11-119" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Frequency"</span>)</span>
+<span id="cb11-120"><a href="#cb11-120" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb11-121"><a href="#cb11-121" aria-hidden="true" tabindex="-1"></a>plt.ylim(<span class="dv">0</span>, <span class="dv">50</span>)</span>
+<span id="cb11-122"><a href="#cb11-122" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb11-123"><a href="#cb11-123" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-124"><a href="#cb11-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-125"><a href="#cb11-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-126"><a href="#cb11-126" aria-hidden="true" tabindex="-1"></a>It's interesting that "**people**" is the most common non-trivial word per chapter, appearing nearly 50 times. Being a religious text, it makes sense that "**Lord**" and "**God**" are the next most common. I find it insightful that "**behold**" was relatively common, suggesting that the *Book of Mormon* emphasizes the importance of listening to God and His commandments.</span>
+<span id="cb11-127"><a href="#cb11-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-128"><a href="#cb11-128" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb11-129"><a href="#cb11-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-130"><a href="#cb11-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### **3. Summary Statistics**</span></span>
+<span id="cb11-131"><a href="#cb11-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-132"><a href="#cb11-132" aria-hidden="true" tabindex="-1"></a>We can also find some summary statistics about the data:</span>
+<span id="cb11-133"><a href="#cb11-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-136"><a href="#cb11-136" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-137"><a href="#cb11-137" aria-hidden="true" tabindex="-1"></a>mean_verses <span class="op">=</span> df[<span class="st">'num_verses'</span>].mean()</span>
+<span id="cb11-138"><a href="#cb11-138" aria-hidden="true" tabindex="-1"></a>std_verses <span class="op">=</span> df[<span class="st">'num_verses'</span>].std()</span>
+<span id="cb11-139"><a href="#cb11-139" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean number of verses per chapter is </span><span class="sc">{</span>mean_verses<span class="sc">:.2f}</span><span class="ss"> with a standard deviation of </span><span class="sc">{</span>std_verses<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb11-140"><a href="#cb11-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-141"><a href="#cb11-141" aria-hidden="true" tabindex="-1"></a>mean_words <span class="op">=</span> df[<span class="st">'avg_words_per_verse'</span>].mean()</span>
+<span id="cb11-142"><a href="#cb11-142" aria-hidden="true" tabindex="-1"></a>std_words <span class="op">=</span> df[<span class="st">'avg_words_per_verse'</span>].std()</span>
+<span id="cb11-143"><a href="#cb11-143" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The mean words per verse is </span><span class="sc">{</span>mean_words<span class="sc">:.2f}</span><span class="ss"> with a standard deviation of </span><span class="sc">{</span>std_words<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb11-144"><a href="#cb11-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-145"><a href="#cb11-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-146"><a href="#cb11-146" aria-hidden="true" tabindex="-1"></a>A **histogram** of the average words per verse looks like:</span>
+<span id="cb11-147"><a href="#cb11-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-150"><a href="#cb11-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-151"><a href="#cb11-151" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-152"><a href="#cb11-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-153"><a href="#cb11-153" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb11-154"><a href="#cb11-154" aria-hidden="true" tabindex="-1"></a>plt.hist(df[<span class="st">'avg_words_per_verse'</span>], bins<span class="op">=</span><span class="dv">15</span>, color<span class="op">=</span><span class="st">'lightgreen'</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb11-155"><a href="#cb11-155" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Distribution of Average Words per Verse"</span>)</span>
+<span id="cb11-156"><a href="#cb11-156" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Average Words per Verse"</span>)</span>
+<span id="cb11-157"><a href="#cb11-157" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Number of Chapters"</span>)</span>
+<span id="cb11-158"><a href="#cb11-158" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb11-159"><a href="#cb11-159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-160"><a href="#cb11-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-161"><a href="#cb11-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-162"><a href="#cb11-162" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb11-163"><a href="#cb11-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-164"><a href="#cb11-164" aria-hidden="true" tabindex="-1"></a><span class="fu">### **4. Correlation Analysis: Verse Length**</span></span>
+<span id="cb11-165"><a href="#cb11-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-166"><a href="#cb11-166" aria-hidden="true" tabindex="-1"></a>Is there a **correlation** between the number of verses in a chapter and the average words per verse? In other words, do longer chapters have longer verses? Let's see:</span>
+<span id="cb11-167"><a href="#cb11-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-170"><a href="#cb11-170" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-171"><a href="#cb11-171" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: Correlation matrix for the two columns</span></span>
+<span id="cb11-172"><a href="#cb11-172" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'num_verses'</span>, <span class="st">'avg_words_per_verse'</span>]].corr() </span>
+<span id="cb11-173"><a href="#cb11-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-174"><a href="#cb11-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-175"><a href="#cb11-175" aria-hidden="true" tabindex="-1"></a>The result indicates there's almost **no linear relationship** between chapter length (number of verses) and the average number of words per verse. This means longer chapters don't necessarily have longer verses, and shorter chapters don't necessarily have shorter verses.</span>
+<span id="cb11-176"><a href="#cb11-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-177"><a href="#cb11-177" aria-hidden="true" tabindex="-1"></a>This is easily visualized by the **scatterplot** below:</span>
+<span id="cb11-178"><a href="#cb11-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-181"><a href="#cb11-181" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb11-182"><a href="#cb11-182" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-183"><a href="#cb11-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-184"><a href="#cb11-184" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb11-185"><a href="#cb11-185" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[<span class="st">'num_verses'</span>], df[<span class="st">'avg_words_per_verse'</span>], alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb11-186"><a href="#cb11-186" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Number of Verses vs. Average Words per Verse"</span>)</span>
+<span id="cb11-187"><a href="#cb11-187" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Verses"</span>)</span>
+<span id="cb11-188"><a href="#cb11-188" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Average Words per Verse"</span>)</span>
+<span id="cb11-189"><a href="#cb11-189" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb11-190"><a href="#cb11-190" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb11-191"><a href="#cb11-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-192"><a href="#cb11-192" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conclusion</span></span>
+<span id="cb11-193"><a href="#cb11-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-194"><a href="#cb11-194" aria-hidden="true" tabindex="-1"></a>I hope that this blog was able to help you understand a little bit more about the **web scraping** process. My code that I used to scrape the *Book of Mormon*, as well as the CSV file that it curated, can be found at: <span class="co">[</span><span class="ot">this GitHub repository</span><span class="co">](https://github.com/nchamp22/Data-Acquisition-Blog)</span></span>
+<span id="cb11-195"><a href="#cb11-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-196"><a href="#cb11-196" aria-hidden="true" tabindex="-1"></a>Try to scrape your own HTML-based book! Some possible options include: <span class="co">[</span><span class="ot">The New Testament</span><span class="co">](https://www.churchofjesuschrist.org/study/scriptures/nt?lang=eng)</span> and <span class="co">[</span><span class="ot">Hamlet</span><span class="co">](https://www.folger.edu/explore/shakespeares-works/hamlet/read/1/1/)</span>, but  **make sure you read the `robots.txt` of any website to determine whether or not you should scrape it.**</span>
+<span id="cb11-197"><a href="#cb11-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-198"><a href="#cb11-198" aria-hidden="true" tabindex="-1"></a>Further resources for learning more about web scraping can be found below:</span>
+<span id="cb11-199"><a href="#cb11-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-200"><a href="#cb11-200" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Requests Documentation</span><span class="co">](https://requests.readthedocs.io/en/latest/)</span></span>
+<span id="cb11-201"><a href="#cb11-201" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Beautiful Soup Documentation</span><span class="co">](https://beautiful-soup-4.readthedocs.io/en/latest/)</span></span>
+<span id="cb11-202"><a href="#cb11-202" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Beautiful Soup Crash Course (YouTube)</span><span class="co">](https://www.youtube.com/watch?v=XVv6mJpFOb0)</span></span>
+<span id="cb11-203"><a href="#cb11-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-204"><a href="#cb11-204" aria-hidden="true" tabindex="-1"></a></span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

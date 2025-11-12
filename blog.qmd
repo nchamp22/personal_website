@@ -324,4 +324,4 @@ I hope this tutorial helped you understand how to use the Python library `pandas
 **Now it's your turn!** Find a dataset and apply these techniques to it. You can explore great datasets on [Data.gov](https://data.gov/) or use your own data. If you want to learn more about `pandas`, the documentation can be found on [this website](https://pandas.pydata.org/docs/user_guide/index.html#user-guide).
 
 
-![Pyton Pandas Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png)
+![Python Pandas Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png)
