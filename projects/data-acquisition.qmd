@@ -179,7 +179,7 @@ plt.show()
 
 ## Conclusion
 
-I hope that this blog was able to help you understand a little bit more about the **web scraping** process. My code that I used to scrape the *Book of Mormon*, as well as the CSV file that it curated, can be found at: [this GitHub repository](https://github.com/nchamp22/Data-Acquisition-Blog)
+I hope that this blog was able to help you understand a little bit more about the **web scraping** process. My code that I used to scrape the *Book of Mormon*, as well as the CSV file that it curated, can be found at [this GitHub repository](https://github.com/nchamp22/Data-Acquisition-Blog)
 
 Try to scrape your own HTML-based book! Some possible options include: [The New Testament](https://www.churchofjesuschrist.org/study/scriptures/nt?lang=eng) and [Hamlet](https://www.folger.edu/explore/shakespeares-works/hamlet/read/1/1/), but  **make sure you read the `robots.txt` of any website to determine whether or not you should scrape it.**
 
